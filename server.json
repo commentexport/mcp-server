@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.commentexport/mcp-server",
+  "description": "Combly MCP: load, search and export YouTube, TikTok and Instagram comments; draw giveaway winners.",
+  "repository": {
+    "url": "https://github.com/commentexport/mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "combly-mcp",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://commentexport.app/mcp"
+    }
+  ]
+}

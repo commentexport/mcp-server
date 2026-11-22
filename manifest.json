@@ -1,0 +1,38 @@
+{
+  "manifest_version": "0.3",
+  "name": "combly",
+  "display_name": "Combly",
+  "version": "1.0.0",
+  "description": "MCP connector for Combly: load, search and export YouTube, TikTok and Instagram comments and draw fair giveaway winners.",
+  "long_description": "Find, search and export YouTube, TikTok and Instagram comments, and draw fair giveaway winners. get_account reads your plan and usage. load_comments and search_comments read a post's comments and find them by keyword, author, date, questions or links; export_comments returns CSV. draw_giveaway picks random winners under your rules and publishes a winner page; list_giveaways and get_giveaway read past draws. Loads and draws use your plan's monthly limits.",
+  "author": {
+    "name": "Codex"
+  },
+  "homepage": "https://commentexport.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/commentexport/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/index.js"
+      ]
+    }
+  },
+  "compatibility": {
+    "platforms": [
+      "darwin",
+      "win32",
+      "linux"
+    ],
+    "runtimes": {
+      "node": ">=22"
+    }
+  },
+  "license": "MIT"
+}
