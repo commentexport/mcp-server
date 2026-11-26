@@ -1,0 +1,6 @@
+{
+  "brand": "Combly",
+  "endpoint": "https://commentexport.app/mcp",
+  "version": "1.0.0",
+  "scope": "combly"
+}
